@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Rejestracja on-line</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
+
+</head>
+<body>
+<h1>Rejestracja on-line</h1>
+
+<form action="process-rejestracja.php" method="post">
+    <label for="lekarz">Wybierz lekarza</label>
+    <select id="lekarz" name="lekarz">
+        <option value="1">Kaja Kowalska</option>
+        <option value="2" selected>Natalia Nowak</option>
+        <option value="3">Jan Jankowski</option>
+    </select>
+
+
+    <label for="cel_wizyty">Cel wizyty</label>
+    <select id="cel_wizyty" name="cel_wizyty">
+        <option value="1" selected>Pierwsza wizyta</option>
+        <option value="2">Konsultacja</option>
+        <option value="3">Pedodoncja</option>
+    </select>
+    <label for="data_wizyty">Termin wizyty</label>
+    <input type="date" id="data_wizyty" name="data_wizyty">
+
+    <label>
+        <input type="checkbox" name="terms">
+        Jestem osobą pełnoletnią.
+    </label>
+    <br>
+    <button>Wyślij</button>
+
+</form>
+</body>
+</html>
